@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  height: 100vh;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section,
+button {
+  font-family: "Space Mono", monospace;
+}
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  margin-top: 20px;
+  letter-spacing: -4px;
+}
+footer {
+  font-size: 14px;
+  font-family: "Space Mono", monospace;
+}
+footer p {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #bdbdbd;
+}
+p a {
+  color: #bdbdbd !important;
+}
+aside.bg-image {
+  background-image: url("./assets/Scarecrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  width: 40%;
+}
+button {
+  background-color: #333333;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: -3.5%;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  width: 100%;
+  max-width: 216px;
+}
+article {
+  width: 43%;
+}
+article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+article p {
+  line-height: 1.35rem;
+  width: 300px;
+}
+section {
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 5%;
+  }
+  button {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 738px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  section {
+    height: unset;
+    flex-direction: column;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  aside {
+    height: 270px;
+    width: 100% !important;
+    background-size: 250px !important;
+    background-position: center !important;
+    margin: -34px 0 20px;
+  }
+  article p {
+    margin: 30px 0;
+    width: 100%;
+    line-height: 1.9rem;
+    font-size: 18px;
+  }
+  article,
+  aside {
+    width: 100%;
+  }
+}
